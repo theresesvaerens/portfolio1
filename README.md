@@ -11,7 +11,7 @@ The goal of this portfolio is to present my skills, highlight my progress as a n
 
 This portfolio is built to present:
 - Three featured projects
-- Sort project descriptions and thumbnails
+- Short project descriptions and thumbnails
 - Links to GitHub repositories
 - Downloadable CV and Cover Letter
 - Simple, responsive layout for desktop and mobile
