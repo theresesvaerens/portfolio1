@@ -138,11 +138,25 @@ ul {
 .hero-image {
     flex: 1;
     min-width: 300px;
-    height: 400px;
-    background: url('../assets/images/hero-banner.jpg') center/cover no-repeat;
+    height: 600px;
     border-radius: 10px;
 }
 
+.hero-image img {
+    width: 100%;
+    max-width: 500; 
+    height: 500px;
+    border-radius: 10%; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
 
 .about {
     display: flex;
@@ -156,7 +170,6 @@ ul {
     flex: 1;
     min-width: 300px;
     height: 400px;
-    background: url('../assets/images/about-banner.jpg') center/cover no-repeat;
     border-radius: 10px;
 }
 
