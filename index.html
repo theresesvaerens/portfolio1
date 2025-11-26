@@ -1,68 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="My personal portfolio, Therese Sværen, front-end developer">
+  <title>Therese Sværen | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">Therese Sværen</a>
 
-    <main>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a href="#" class="navbar-link">Home</a></li>
+          <li><a href="#about" class="navbar-link">About</a></li>
+          <li><a href="#portfolio" class="navbar-link">Portfolio</a></li>
+          <li><a href="#contact" class="navbar-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p></p>
-        </section>
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h2>Hello, I'm <span>Therese Sværen</span></h2>
+          <p>A passionate front-end developer focusing on clean design, accessibility and user‑friendly experiences.</p>
+          <a href="#portfolio" class="btn">View My Work</a>
+        </div>
+        <div class="hero-image"></div>
+      </div>
+    </section>
 
-        <section id="projects">
-            <h2>Featured Projects</h2>
-
-            <div class="project-card">
-                <h3>Project Title 1</h3>
-                <p>Short description of the project.</p>
-                <a href="#">GitHub</a> | <a href="#">Live Demo</a>
-            </div>
-
-            <div class="project-card">
-                <h3>Project Title 2</h3>
-                <p>Short description of the project.</p>
-                <a href="#">GitHub</a> | <a href="#">Live Demo</a>
-            </div>
-
-            <div class="project-card">
-                <h3>Project Title 3</h3>
-                <p>Short description of the project.</p>
-                <a href="#">GitHub</a> | <a href="#">Live Demo</a>
-            </div>
-
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:therese.svaeren@hotmail.com">therese.svaeren@hotmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/theresesværen">My LinkedIn</a></p>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>© 2025 Therese Sværen</p>
-    </footer>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-img"></div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>I am a creative front-end developer who loves building visually appealing and functional websites. I enjoy working with HTML, CSS, JavaScript while continuously growing my skills.</p>
+          <p>On my free time I design in Canva, experiment with small creative projects.</p>
+        </div>
+      </div>
+    </section>
 
 
-    <script src="script.js"></script>
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2>My Projects</h2>
+        <ul class="portfolio-list">
+
+          <li class="portfolio-card">
+            <div class="portfolio-img img-1"></div>
+            <h3>Square eyes</h3>
+            <p>Streaming service concept with API-driven content, category pages and product detail views.</p>
+          </li>
+
+          <li class="portfolio-card">
+            <div class="portfolio-img img-2"></div>
+            <h3>Community Science Museum</h3>
+            <p>Interactive museum website built with accessible structure, animations and responsive layouts.</p>
+          </li>
+
+          <li class="portfolio-card">
+            <div class="portfolio-img img-3"></div>
+            <h3>Square Eyes</h3>
+            <p>Streaming service concept with API-driven content, category pages and product detail views.</p>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Therese Sværen</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
