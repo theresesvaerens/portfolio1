@@ -169,7 +169,7 @@ ul {
 .about-img {
     flex: 1;
     min-width: 300px;
-    height: 400px;
+    height: 200px;
     border-radius: 10px;
 }
 
@@ -230,9 +230,16 @@ ul {
 }
 
 .portfolio-card .portfolio-img {
-    height: 200px;
+    height: 250px;
     background-size: cover;
     background-position: center;
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: auto;      
+    object-fit: contain;
+    display: block;
 }
 
 .portfolio-card h3 {
