@@ -108,6 +108,28 @@ ul {
     width: 100%;
 }
 
+.btn {
+    position: relative;
+    font-weight: 500;
+    padding-bottom: 4px;
+    display: inline-block;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-dark);
+    transition: var(--transition);
+}
+
+.btn:hover::after {
+    width: 100%;
+}
+
 
 .hero {
     display: flex;
