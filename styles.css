@@ -202,9 +202,8 @@ ul {
     background-color: var(--color-light);
 }
 
-.portfolio h2 {
+.portfolio h1 {
     font-size: 2rem;
-    margin-bottom: 2rem;
 }
 
 .portfolio-list {
@@ -253,6 +252,25 @@ ul {
     color: var(--color-medium);
 }
 
+.project-links {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .project-links a i {
+    font-size: 1.4rem;
+    color: #333;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .project-links a:hover i {
+    color: #8d8782; 
+    transform: scale(1.1);
+  }
 
 .contact {
     padding: 4rem 2rem;
@@ -305,6 +323,24 @@ ul {
 .footer a {
     color: #fff;
 }
+
+.footer-socials {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer-socials a i {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: 0.3s ease;
+  }
+  
+  .footer-socials a:hover i {
+    color: #8d8782;
+    transform: scale(1.15);
+  }
 
 
 @media screen and (max-width: 768px) {
