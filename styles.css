@@ -108,14 +108,14 @@ ul {
     width: 100%;
 }
 
-.btn {
+.header-btn {
     position: relative;
     font-weight: 500;
     padding-bottom: 4px;
     display: inline-block;
 }
 
-.btn::after {
+.header-btn::after {
     content: '';
     position: absolute;
     width: 0%;
@@ -126,7 +126,7 @@ ul {
     transition: var(--transition);
 }
 
-.btn:hover::after {
+.header-btn:hover::after {
     width: 100%;
 }
 
