@@ -19,6 +19,7 @@ body {
     background-color: #fff;
     line-height: 1.6;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 a {

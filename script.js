@@ -5,6 +5,17 @@ window.addEventListener("load", () => {
     }, 1000); 
   });
 
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const navBtn = document.querySelector(".nav-toggle-btn");
+    const navList = document.querySelector(".navbar-list");
+  
+    navBtn.addEventListener("click", () => {
+      navList.classList.toggle("active");
+    });
+  });
+  
+
   document.addEventListener("DOMContentLoaded", () => {
     const aboutText = document.querySelector(".about-text");
     const aboutImg = document.querySelector(".about-img");
