@@ -8,14 +8,29 @@ window.addEventListener("load", () => {
 
   document.addEventListener("DOMContentLoaded", () => {
     const navBtn = document.querySelector(".nav-toggle-btn");
+    const navbar = document.querySelector(".navbar");
     const navList = document.querySelector(".navbar-list");
+    const navLinks = document.querySelectorAll(".navbar-link");
   
+ 
     navBtn.addEventListener("click", () => {
       navList.classList.toggle("active");
     });
-  });  
+  
 
-  document.addEventListener("DOMContentLoaded", () => {
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        navList.classList.remove("active");
+      });
+    });
+  
+
+    document.addEventListener("click", (e) => {
+      if (!navList.contains(e.target) && !navBtn.contains(e.target)) {
+        navList.classList.remove("active");
+      }
+    });
+
     const aboutText = document.querySelector(".about-text");
     const aboutImg = document.querySelector(".about-img");
   
@@ -27,7 +42,7 @@ window.addEventListener("load", () => {
           }
         });
       },
-      { threshold: 0.3 } 
+      { threshold: 0.3 }
     );
   
     observer.observe(aboutText);
