@@ -13,8 +13,7 @@ window.addEventListener("load", () => {
     navBtn.addEventListener("click", () => {
       navList.classList.toggle("active");
     });
-  });
-  
+  });  
 
   document.addEventListener("DOMContentLoaded", () => {
     const aboutText = document.querySelector(".about-text");
