@@ -387,6 +387,9 @@ ul {
     background-color: var(--color-medium);
 }
 
+#success-message{
+text-align: center;
+}
 
 .footer {
     padding: 2rem;

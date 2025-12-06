@@ -49,3 +49,18 @@ window.addEventListener("load", () => {
     observer.observe(aboutImg);
   });
   
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const form = e.target;
+  
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(new FormData(form)).toString()
+    })
+    .then(() => {
+      document.getElementById("success-message").style.display = "block"; 
+      form.reset(); 
+    })
+    .catch((error) => alert(error));
+  });
